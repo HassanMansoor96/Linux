@@ -2,7 +2,7 @@ UBANTO (linux for windows)
 
 
 ~		- home (cd ~)
-/		- root (cd /)	(absolute paths start with '/'	eg. cd /root/home/byron )
+/		- root (cd /)	(absolute paths start with '/'	eg. cd /root/home/hassan )
 cd ..		- goes up/back one directory
 cd		- change to home directory. (alternatively: cd ~)
 cd <directory/>  - change to the specified directory. (cd Documents/)
@@ -24,9 +24,9 @@ grep		- find text in files.	(grep <string to look for> <file to look in>)
 		  (grep Su test.js) find 'Su' in file 'test.js'
 		  (grep -r 'Su') find all 'r' in all files in current folder and its subdirectories.
 pwd		- print current directory (shows you the full path/ABSOLUTE PATH)
-		  Absolute Path: the path from ROOT -> The Folder you are in. eg. /mnt/c/Users/byron
+		  Absolute Path: the path from ROOT -> The Folder you are in. eg. /mnt/c/Users/hassan
 		  Relative Path: the path from where you are to where you want to go. 
-			eg. if you are in /byron, and want to go to Documents: cd Documents/
+			eg. if you are in /hassan, and want to go to Documents: cd Documents/
 ls			- List Storage
 ls -la			- list all files in current folder
 ls <folder name>	- peek inside a folder. (ls Documents/) or (ls Documents/Work/Invoices)
@@ -89,8 +89,8 @@ tail			- shows last 10 lines of a file. (use -n to specify number of lines)
 			  !!NOTE: this overwrites everything in the file.
 			  >> Redirects and APPENDS: (date >> test.js)
 echo			- returns your text. (eg. useful for creating a new file and placing text in it)
-			  echo "USERNAME=byron" > config.txt
-			  [EXPANSION] return the value of something. eg 'echo ~' returns '/home/byron'
+			  echo "USERNAME=hassan" > config.txt
+			  [EXPANSION] return the value of something. eg 'echo ~' returns '/home/hassan'
 			  Expand enviroment variables:  echo $PATH, echo $USER
 			  Expand path names in directory (* = anything, ? = any single character):  echo *, echo *.txt
 							.
@@ -121,7 +121,7 @@ passwd			- [Password]: change a password.
 chown			- change the owner of a file.		chown <user to be owner> <file>
 			  change the owner and group.		chown <user to be owner>:<group> <file>
 			  change the group of a file.		chgrp <group> <file>
-			  (sudo chown byron Music): you may need to use sudo, depending on your permissions.
+			  (sudo chown hassan Music): you may need to use sudo, depending on your permissions.
 sudo apt-get update	- update packages to latest versions.
 sudo apt-get upgrade	- upgrade packages.
 sudo apt install <app name>	- install an app. (eg. sudo apt install tree)
@@ -198,13 +198,13 @@ chmod			- [Change Mode]: change the permissions of a file.
 
 [home directory: ~ ]
 
-[byron@DESKTOP-U1I1PKS:~$	(user)@(computer you are using):(~ = home)($ = logged in as regular/standard user)]
+[hassan@DESKTOP-U1I1PKS:~$	(user)@(computer you are using):(~ = home)($ = logged in as regular/standard user)]
 
 [tab button for auto-complete: eg. cd Doc (press tab to auto-complete... 'Document')]
 
-[add an alias. eg. entering 'winhome' will execute the command 'cd /mnt/c/Users/byron/']	
+[add an alias. eg. entering 'winhome' will execute the command 'cd /mnt/c/Users/hassan/']	
 open the bashrc file - nano ~/.bashrc
-under 'esac' enter:	alias winhome='cd /mnt/c/Users/byron/'
+under 'esac' enter:	alias winhome='cd /mnt/c/Users/hassan/'
 exit and save:		exit: cntrl+x 	save:  y
 source the file so changes can take effect:	source ~/.bashrc
 
